@@ -1,6 +1,0 @@
-C:\Users\nicho\OneDrive\Programming\Projects.Practice\GodelNumbering\GodelNumbering\GodelNumbering\bin\Debug\GodelNumbering.exe.config
-C:\Users\nicho\OneDrive\Programming\Projects.Practice\GodelNumbering\GodelNumbering\GodelNumbering\bin\Debug\GodelNumbering.exe
-C:\Users\nicho\OneDrive\Programming\Projects.Practice\GodelNumbering\GodelNumbering\GodelNumbering\bin\Debug\GodelNumbering.pdb
-C:\Users\nicho\OneDrive\Programming\Projects.Practice\GodelNumbering\GodelNumbering\GodelNumbering\obj\Debug\GodelNumbering.exe
-C:\Users\nicho\OneDrive\Programming\Projects.Practice\GodelNumbering\GodelNumbering\GodelNumbering\obj\Debug\GodelNumbering.pdb
-C:\Users\nicho\OneDrive\Programming\Projects.Practice\GodelNumbering\GodelNumbering\GodelNumbering\obj\Debug\GodelNumbering.csprojResolveAssemblyReference.cache
