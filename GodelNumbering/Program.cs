@@ -8,7 +8,13 @@ namespace GodelNumbering {
     class Program {
         static void Main(string[] args) {
             // Construct some data to work on
-            string input = "Mary had a little lamb, its fleece was white as snow";
+            if (args.Count() == 0) {
+                Console.WriteLine("Please pass in the string that you want to encode");
+                Console.ReadKey();
+                return;
+            }
+            string input = args[0];
+
             List<int> uni_chars = Godel_Helpers.StringToUnicodeList(input);
 
             // to godel
@@ -23,12 +29,12 @@ namespace GodelNumbering {
 
             // Some stats
             Console.WriteLine("\n... and now some stats!");
-            Console.WriteLine("Godel Digits: " + godel.ToString().Length + " || 000,000 points: " + (godel.ToString().Length / 3).ToString());
+            Console.WriteLine("Godel Digits: " + godel.ToString().Length.ToString());
 
-            Single input_bytes = (Single)Math.Round((Single)UnicodeEncoding.UTF8.GetByteCount(input) / 1024, 2);
-            Single godel_bytes = (Single)checked(Math.Round((Single)godel.ToByteArray().Count() / 1024, 2));
-            Single ratio = (Single)Math.Round((godel_bytes / input_bytes), 0);
-            Console.WriteLine(input_bytes + "KB -> " + godel_bytes + "KB");
+            Single input_bytes = (Single)(Single)UnicodeEncoding.UTF8.GetByteCount(input) / 1024;
+            Single godel_bytes = (Single)checked((Single)godel.ToByteArray().Count() / 1024);
+            Single ratio = (Single)Math.Round((godel_bytes / input_bytes), 2);
+            Console.WriteLine(Math.Round(input_bytes, 3) + "KB -> " + Math.Round(godel_bytes, 3) + "KB");
             Console.WriteLine("That's a 1:" + ratio + " compression ratio!");
 
             Console.Read();
